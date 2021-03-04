@@ -25,7 +25,14 @@
 }
 
 .App-link {
+  padding-top: 100px;
   color: #61dafb;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-link {
+    animation: App-link-spin 3s infinite;
+  }
 }
 
 /* @keyframes App-logo-spin {
@@ -36,3 +43,18 @@
     transform: rotate(360deg);
   }
 } */
+
+@keyframes App-link-spin {
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
